@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    /* color: #afc7e3; */
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #e9ebec;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+}
+
+/* Menu List Component */
+.menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: "Raleway", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px 20px;
+}
+
+.card {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    cursor: pointer;
+}
+
+.card-header {
+    background-color: #959595;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.card-header img {
+    height: 80px;
+    width: 100px;
+}
+
+.card-footer {
+    background-color: #fff;
+    font-size: 0.6em;
+    height: 20px;
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+/* Menus- Menu */
+.menu-menus {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+}
+
+/* Billing list Component */
+.header-bill {
+    background-color: #e3e6f3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-bill h1 {
+    font-size: 1.3em;
+}
+
+.header-bill button {
+    background-color: #bdc6e2;
+    border: none;
+    color: #546aad;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-bill button i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Main Bill */
+.bill {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.main-bill {
+    background-color: #fff;
+    font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-bill__price {
+    padding: 15px;
+}
+
+.main-bill__header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 3px solid #e9ebec;
+    font-weight: 600;
+}
+
+.main-bill__header i {
+    color: #afc7e3;
+    margin-left: 10px;
+}
+
+.main-bill-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+.clear-sale {
+    text-align: center;
+    border-top: 3px solid #e9ebec;
+    border-bottom: 2px solid #e9ebec;
+}
+
+.clear-sale button {
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    color: #cacaca;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.main-bill__footer {
+    text-align: center;
+}
+
+.option-bill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.option-bill button {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 400;
+    background-color: #e9ebec;
+}
+
+.charge {
+    display: flex;
+    justify-content: center;
+}
+
+.charge button {
+    padding: 10px;
+    background-color: #495da7;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.charge button:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 80px;
+    border-right: 2px solid #e9ebec;
+}
+
+.charge button:nth-child(1) i {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+.charge button:nth-child(2) {
+    flex: 1;
+    font-size: 1.3em;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    font-family: "Raleway", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.logo img {
+    width: 150px;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-list button {
+    padding: 8px 12px;
+    border: none;
+    color: #353434;
+}
+
+.navbar-list button:hover {
+    background-color: #546aad;
+}
+
+/* Soal 2 */
+#products {
+    width: 100%;
+    font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+}
+
+.table-wrapper {
+    width: 800px;
+}
+
+#products td,
+#products th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.action-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.btn-primary {
+    background-color: #546aad;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.btn-warning {
+    background-color: #f0ad4e;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.btn-danger {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Add Product */
+.create-product {
+    font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.create-product h1 {
+    margin: 10px 0;
+}
+.input {
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+    padding: 3px;
+}
+.input input {
+    padding: 5px;
+    font-size: 1em;
+    border: none;
+    width: 100%;
+}
+
+.submit button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width: 1000px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .menu-list {
+        margin: 0 auto;
+    }
+
+    .bill {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 585px) {
+    .container {
+        margin: 30px auto;
+    }
+    .menu-item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
